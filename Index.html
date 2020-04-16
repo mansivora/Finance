@@ -64,37 +64,10 @@
                                         <h2>Search by Country</h2>
                                     </div>
                                     <div class="tf-ticker-nav-mobile">
-                                        <select class="form-control" id="country" onchange="myFunction()">
-                                            <option value="0">All</option>
-                                            <option value="1">Algeria</option>
-                                            <option value="2">Argentina</option>
-                                            <option value="3">Austria</option>
-                                            <option value="4">Bulgeria</option>
-                                            <option value="5">Canada</option>
-                                            <option value="6">Denmark</option>
-                                            <option value="7">Estonia</option>
-                                            <option value="8">India</option>
-                                            <option value="9">Italy</option>
-                                            <option value="10">Singapore</option>
-                                            <option value="11">United Kingdom</option>
-                                            <option value="12">United States</option>
-                                        </select>
+                                        <input class="form-control" placeholder="Search...." id="country" onkeyup="myFunction()">
+                                         
                                     </div>
-                                    <ul class="country-tabs" role="tablist" id="country" onchange="myFunction()">
-                                        <li class="nav-item active"><a href="#tab1" role="tab" data-toggle="tab" aria-selected="true" aria-expanded="true">All</a></li>
-                                        <li class="nav-item"><a href="#tab2" role="tab" data-toggle="tab" aria-selected="true" aria-expanded="false">Algeria</a></li>
-                                        <li class="nav-item"><a href="#tab3" role="tab" data-toggle="tab" aria-selected="true" aria-expanded="false">Argentina</a></li>
-                                        <li class="nav-item"><a href="#tab4" role="tab" data-toggle="tab" aria-selected="true" aria-expanded="false">Austria</a></li>
-                                        <li class="nav-item"><a href="#tab5" role="tab" data-toggle="tab" aria-selected="true" aria-expanded="false">Bulgeria</a></li>
-                                        <li class="nav-item"><a href="#tab6" role="tab" data-toggle="tab" aria-selected="true" aria-expanded="false">Canada</a></li>
-                                        <li class="nav-item"><a href="#tab7" role="tab" data-toggle="tab" aria-selected="true" aria-expanded="false">Denmark</a></li>
-                                        <li class="nav-item"><a href="#tab8" role="tab" data-toggle="tab" aria-selected="true" aria-expanded="false">Estonia</a></li>
-                                        <li class="nav-item"><a href="#tab9" role="tab" data-toggle="tab" aria-selected="true" aria-expanded="false">India</a></li>
-                                        <li class="nav-item"><a href="#tab10" role="tab" data-toggle="tab" aria-selected="true" aria-expanded="false">Italy</a></li>
-                                        <li class="nav-item"><a href="#tab11" role="tab" data-toggle="tab" aria-selected="true" aria-expanded="false">Singapore</a></li>
-                                        <li class="nav-item"><a href="#tab12" role="tab" data-toggle="tab" aria-selected="true" aria-expanded="false">United Kingdom</a></li>
-                                        <li class="nav-item"><a href="#tab13" role="tab" data-toggle="tab" aria-selected="true" aria-expanded="false">United States</a></li>
-                                    </ul>
+                                    
                                 </div>
                             </div>
                             <div class="tf-assets-table-area">
@@ -102,12 +75,12 @@
                                     <div class="tf-assets-table-block-inner">
                                         <div class="tab-content">
                                             <!-- Start All Data -->
-                                            <div role="tabpanel" class="tab-pane fade active in" id="tab1">
+                                            <div role="tabpanel" class="tab-pane fade active in" >
                                                 <div class="row">
                                                     <div class="col-md-12">
                                                         <div class="tf-financier-table tf-element">
                                                             <div class="table-responsive">
-                                                                <table class="table table-hover">
+                                                                <table class="table table-hover"id="tab1">
                                                                     <thead>
                                                                         <th scope="col">FINANCER NAME</th>
                                                                         <th scope="col">FINANCER EMAIL ID</th>
@@ -371,295 +344,7 @@
                                                 </div>
                                             </div>
                                             <!-- End All Data -->
-                                            <!-- Start Receivables Data -->
-                                            <div role="tabpanel" class="tab-pane fade" id="tab2">
-                                                <div class="row">
-                                                    <div class="col-md-12">
-                                                        <div class="tf-financier-table tf-element">
-                                                            <div class="table-responsive">
-                                                                <table class="table table-hover">
-                                                                    <thead>
-                                                                        <tr>
-                                                                            <th scope="col">FINANCER NAME</th>
-                                                                            <th scope="col">FINANCER EMAIL ID</th>
-                                                                            <th scope="col">FINANCER COUNTRY</th>
-                                                                            <th scope="col">LINKEDIN</th>
-                                                                            <th scope="col">PHONE</th>
-                                                                        </tr>
-                                                                    </thead>
-                                                                    <tbody>
-                                                                        <tr>
-                                                                            <td>Gail Forcewind</td>
-                                                                            <td>GailForcewind@XinFin.org</td>
-                                                                            <td>Algeria</td>
-                                                                            <td>SGD 100000</td>
-                                                                            <td>+65 9821720</td>
-                                                                            </td>
-                                                                        </tr>
-                                                                        <tr>
-                                                                            <td>Cliff Hanger</td>
-                                                                            <td>CliffHanger@XinFin.org</td>
-                                                                            <td>Algeria</td>
-                                                                            <td>SGD 100000</td>
-                                                                            <td>+65 9821720</td>
-                                                                            </td>
-                                                                        </tr>
-                                                                    </tbody>
-                                                                </table>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <!-- End Receivables Data -->
-                                            <!-- Start Letter of Credit Data -->
-                                            <div role="tabpanel" class="tab-pane fade" id="tab3">
-                                                <div class="row">
-                                                    <div class="col-md-12">
-                                                        <div class="tf-financier-table tf-element">
-                                                            <div class="table-responsive">
-                                                                <table class="table table-hover">
-                                                                    <thead>
-                                                                        <tr>
-                                                                            <th scope="col">FINANCER NAME</th>
-                                                                            <th scope="col">FINANCER EMAIL ID</th>
-                                                                            <th scope="col">FINANCER COUNTRY</th>
-                                                                            <th scope="col">LINKEDIN</th>
-                                                                            <th scope="col">PHONE</th>
-                                                                        </tr>
-                                                                    </thead>
-                                                                    <tbody>
-                                                                        <tr>
-                                                                            <td>Paige Turner</td>
-                                                                            <td>PaigeTurner@XinFin.org</td>
-                                                                            <td>Argentina</td>
-                                                                            <td>SGD 145000</td>
-                                                                            <td>+65 9821720</td>
-                                                                        </tr>
-                                                                        <tr>
-                                                                            <td>Pete Sariya</td>
-                                                                            <td>PeteSariya@XinFin.org</td>
-                                                                            <td>Argentina</td>
-                                                                            <td>SGD 145000</td>
-                                                                            <td>+65 9821720</td>
-                                                                        </tr>
-                                                                    </tbody>
-                                                                </table>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <!-- End Letter of Credit Data -->
-                                            <!-- Start Bank Gurantees Data -->
-                                            <div role="tabpanel" class="tab-pane fade" id="tab4">
-                                                <div class="row">
-                                                    <div class="col-md-12">
-                                                        <div class="tf-financier-table tf-element">
-                                                            <div class="table-responsive">
-                                                                <table class="table table-hover">
-                                                                    <thead>
-                                                                        <tr>
-                                                                            <th scope="col">FINANCER NAME</th>
-                                                                            <th scope="col">FINANCER EMAIL ID</th>
-                                                                            <th scope="col">FINANCER COUNTRY</th>
-                                                                            <th scope="col">LINKEDIN</th>
-                                                                            <th scope="col">PHONE</th>
-                                                                        </tr>
-                                                                    </thead>
-                                                                    <tbody>
-                                                                        <tr>
-                                                                            <td>Anna Mull</td>
-                                                                            <td>AnnaMull@XinFin.org</td>
-                                                                            <td>Bulgeria</td>
-                                                                            <td>SGD 100000</td>
-                                                                            <td>+65 9821720</td>
-                                                                            </td>
-                                                                        </tr>
-                                                                        <tr>
-                                                                            <td>Brock Lee</td>
-                                                                            <td>BrockLee@XinFin.org</td>
-                                                                            <td>Bulgeria</td>
-                                                                            <td>SGD 100000</td>
-                                                                            <td>+65 9821720</td>
-                                                                            </td>
-                                                                        </tr>
-                                                                        <tr>
-                                                                            <td>Maya Didas</td>
-                                                                            <td>MayaDidas@XinFin.org</td>
-                                                                            <td>Bulgeria</td>
-                                                                            <td>SGD 100000</td>
-                                                                            <td>+65 9821720</td>
-                                                                            </td>
-                                                                        </tr>
-                                                                    </tbody>
-                                                                </table>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <!-- End Bank Gurantees Data -->
-                                            <!-- Start SBLC Data -->
-                                            <div role="tabpanel" class="tab-pane fade" id="tab5">
-                                                <div class="row">
-                                                    <div class="col-md-12">
-                                                        <div class="tf-financier-table tf-element">
-                                                            <div class="table-responsive">
-                                                                <table class="table table-hover">
-                                                                    <thead>
-                                                                        <tr>
-                                                                            <th scope="col">FINANCER NAME</th>
-                                                                            <th scope="col">FINANCER EMAIL ID</th>
-                                                                            <th scope="col">FINANCER COUNTRY</th>
-                                                                            <th scope="col">LINKEDIN</th>
-                                                                            <th scope="col">PHONE</th>
-                                                                        </tr>
-                                                                    </thead>
-                                                                    <tbody>
-                                                                        <tr>
-                                                                            <td>Mario Speedwagon</td>
-                                                                            <td>MarioSpeedwagon@XinFin.org</td>
-                                                                            <td>Canada</td>
-                                                                            <td>SGD 100000</td>
-                                                                            <td>+65 9821720</td>
-                                                                            </td>
-                                                                        </tr>
-                                                                        <tr>
-                                                                            <td>Barb Ackue</td>
-                                                                            <td>BarbAckue@XinFin.org</td>
-                                                                            <td>Canada</td>
-                                                                            <td>XDC 550570</td>
-                                                                            <td>+65 9821720</td>
-                                                                            </td>
-                                                                        </tr>
-                                                                    </tbody>
-                                                                </table>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <!-- End SBLC Data -->
-                                            <!-- Start Warehousing Receipt Data -->
-                                            <div role="tabpanel" class="tab-pane fade" id="tab6">
-                                                <div class="row">
-                                                    <div class="col-md-12">
-                                                        <div class="tf-financier-table tf-element">
-                                                            <div class="table-responsive">
-                                                                <table class="table table-hover">
-                                                                    <thead>
-                                                                        <tr>
-                                                                            <th scope="col">FINANCER NAME</th>
-                                                                            <th scope="col">FINANCER EMAIL ID</th>
-                                                                            <th scope="col">FINANCER COUNTRY</th>
-                                                                            <th scope="col">LINKEDIN</th>
-                                                                            <th scope="col">PHONE</th>
-                                                                        </tr>
-                                                                    </thead>
-                                                                    <tbody>
-                                                                        <tr>
-                                                                            <td>Paul Molive</td>
-                                                                            <td>PaulMolive@XinFin.org</td>
-                                                                            <td>Denmark</td>
-                                                                            <td>SGD 100000</td>
-                                                                            <td>+65 9821720</td>
-                                                                            </td>
-                                                                        </tr>
-                                                                        <tr>
-                                                                            <td>Bob Frapples</td>
-                                                                            <td>BobFrapples@XinFin.org</td>
-                                                                            <td>Denmark</td>
-                                                                            <td>XDC 10300</td>
-                                                                            <td>+65 9821720</td>
-                                                                            </td>
-                                                                        </tr>
-                                                                    </tbody>
-                                                                </table>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <!-- End Warehousing Receipt Data -->
-                                            <!-- Start Payable Data -->
-                                            <div role="tabpanel" class="tab-pane fade" id="tab7">
-                                                <div class="row">
-                                                    <div class="col-md-12">
-                                                        <div class="tf-financier-table tf-element">
-                                                            <div class="table-responsive">
-                                                                <table class="table table-hover">
-                                                                    <thead>
-                                                                        <tr>
-                                                                            <th scope="col">FINANCER NAME</th>
-                                                                            <th scope="col">FINANCER EMAIL ID</th>
-                                                                            <th scope="col">FINANCER COUNTRY</th>
-                                                                            <th scope="col">LINKEDIN</th>
-                                                                            <th scope="col">PHONE</th>
-                                                                        </tr>
-                                                                    </thead>
-                                                                    <tbody>
-                                                                        <tr>
-                                                                            <td>Omkar Mestry</td>
-                                                                            <td>JonSnow@XinFin.org</td>
-                                                                            <td>India</td>
-                                                                            <td>SGD 145000</td>
-                                                                            <td>+65 9821720</td>
-                                                                        </tr>
-                                                                        <tr>
-                                                                            <td>Anil Chinchwale</td>
-                                                                            <td>JonSnow@XinFin.org</td>
-                                                                            <td>India</td>
-                                                                            <td>SGD 145000</td>
-                                                                            <td>+65 9821720</td>
-                                                                        </tr>
-                                                                    </tbody>
-                                                                </table>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <!-- End Payable Data -->
-                                            <!-- Start OTHER Data -->
-                                            <div role="tabpanel" class="tab-pane fade" id="tab8">
-                                                <div class="row">
-                                                    <div class="col-md-12">
-                                                        <div class="tf-financier-table tf-element">
-                                                            <div class="table-responsive">
-                                                                <table class="table table-hover">
-                                                                    <thead>
-                                                                        <tr>
-                                                                            <th scope="col">FINANCER NAME</th>
-                                                                            <th scope="col">FINANCER EMAIL ID</th>
-                                                                            <th scope="col">FINANCER COUNTRY</th>
-                                                                            <th scope="col">LINKEDIN</th>
-                                                                            <th scope="col">PHONE</th>
-                                                                        </tr>
-                                                                    </thead>
-                                                                    <tbody>
-                                                                        <tr>
-                                                                            <td>Ritesh Kakkad</td>
-                                                                            <td>JonSnow@XinFin.org</td>
-                                                                            <td>Singapore</td>
-                                                                            <td>XDC 10000</td>
-                                                                            <td>+65 9821720</td>
-                                                                        </tr>
-                                                                        <tr>
-                                                                            <td>Atul Khekade</td>
-                                                                            <td>JonSnow@XinFin.org</td>
-                                                                            <td>Singapore</td>
-                                                                            <td>SGD 145000</td>
-                                                                            <td>+65 9821720</td>
-                                                                        </tr>
-                                                                    </tbody>
-                                                                </table>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <!-- End OTHER Data -->
+                                          
                                         </div>
                                     </div>
                                 </div>
@@ -689,6 +374,25 @@
                 const transaction = `https://explorer.xinfin.network/tx/${transactions[0]}`;
                 window.open(url + contractAddress + "%0D%0ATransaction Hash:" + transaction, 'sharer', 'toolbar=0,status=0,width=648,height=395');
                 return true;
+            }
+            function myFunction() {
+               var input, filter, table, tr, td, i, txtValue;
+               input = document.getElementById("country");
+               filter = input.value.toUpperCase();
+               table = document.getElementById("tab1");
+               tr = table.getElementsByTagName("tr");
+               console.log("@@@",table);
+               for (i = 0; i < tr.length; i++) {
+                  td = tr[i].getElementsByTagName("td")[2];
+                  if (td) {
+                     txtValue = td.textContent || td.innerText;
+                     if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                     tr[i].style.display = "";
+                     } else {
+                     tr[i].style.display = "none";
+                     }
+                  }       
+               }
             }
         </script>
     </body>
